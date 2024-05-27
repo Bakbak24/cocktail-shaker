@@ -5,56 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktail Shaker</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 95vh;
-            background-color: #f0f0f0;
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        #shaker {
-            margin-top: 50px;
-            width: 200px;
-            height: auto;
-        }
-
-        #texts {
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            top: 0;
-            width: 98%;
-        }
-
-        #countdown {
-            width: 50%;
-            text-align: right;
-        }
-
-        #shakes {
-            width: 50%;
-            text-align: left;
-        }
-
-        #start-btn {
-            margin-top: 50px;
-            padding: 10px 20px;
-            font-size: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -62,10 +13,12 @@
         <h1 id="countdown">Sec:30</h1>
         <h1 id="shakes">Shakes:0</h1>
     </div>
-    <h2 id="title">Keep shaking your cocktail as fast as possible for 30sec <br> But not too fast or it will explode
-    </h2>
-    <img id="shaker" src="images/shaker.png" alt="Cocktail Shaker">
-    <button id="start-btn">Start Again</button>
+    <h1>#Shake The Cocktail</h1>
+    <div id="content">
+        <h2 id="title">Keep shaking your cocktail as fast as possible for 30sec</h2>
+        <img id="shaker" src="images/shaker.png" alt="Cocktail Shaker">
+        <button id="start-btn">Start Again</button>
+    </div>
     <script src="js/main.js"></script>
 </body>
 

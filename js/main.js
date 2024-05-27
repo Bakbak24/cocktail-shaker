@@ -27,6 +27,7 @@ function handleOrientation(event) {
 }
 
 function startGame() {
+    shaker.setAttribute('src', 'images/shaker.png');
     let countdownElement = document.getElementById('countdown');
     let countdownInterval = setInterval(function() {
         countdown--;
@@ -45,12 +46,13 @@ function endGame() {
     countdown = 30;
     document.getElementById('shakes').innerText = "Shakes:0";
     document.getElementById('countdown').innerText = "Sec:30";
+    shaker.setAttribute('src', 'images/explosion.png');
 }
 
 startAgainButton.onclick = function() {
     startGame();
     startAgainButton.style.display = "none";
-    document.getElementById('title').innerText = "Keep shaking your cocktail as fast as possible for 30sec But not too fast or it will explode";
+    document.getElementById('title').innerText = "Keep shaking your cocktail as fast as possible for 30sec";
 };
 
 window.onload = function() {
